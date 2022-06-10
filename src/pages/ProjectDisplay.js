@@ -12,11 +12,11 @@ function ProjectDisplay() {
   return (
     
     <div className='project'>
-      <Link to="/project">Back</Link>
         <h1> {project.name} </h1>
         <img src= {project.image} />
         <p><b>Skills: </b> {project.skill}</p>
         <a href={project.link}><GitHubIcon /></a>
+        <h2><Link to="/project">Back</Link></h2>
     </div>
   )
 }
