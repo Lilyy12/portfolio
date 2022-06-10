@@ -7,10 +7,15 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectDisplay from './pages/ProjectDisplay';
 import ContactForm from './components/ContactForm';
+import Helmet from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Lily's Portfolio</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <Router>
         <Navbar />
         <Routes>
